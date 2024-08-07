@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.tab-link');
+    const projects = document.querySelectorAll('.project-link'); // This will be empty if there are no .project-link elements
     const contentArea = document.getElementById('content-area');
 
     function loadContent(url) {
@@ -20,6 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Load the default content
-    document.querySelector('.tab-link').click();
+    projects.forEach(project => {
+        project.addEventListener('click', function (event) {
+            event.preventDefault();
+            loadContent(this.getAttribute('data-content'));
+
+            console.log("DONE");
+        });
+    });
+
+    // Load the default content if present
+    if (document.querySelector('.tab-link')) {
+        document.querySelector('.tab-link').click();
+    }
 });
