@@ -114,24 +114,3 @@ main {
     padding: 20px;
     background-color: #f9f9f9;
 }
-
-#content-area p {
-    max-width: calc(100% - 50px); /* Adjust width of the text area to account for padding */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify; /* Ensure text is justified to fill the available width */
-}
-
-#content-area h3 {
-    max-width: calc(100% - 50px); /* Adjust width of the text area to account for padding */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify; /* Ensure text is justified to fill the available width */
-}
-
-#content-area h2 {
-    max-width: calc(100% - 50px); /* Adjust width of the text area to account for padding */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify; /* Ensure text is justified to fill the available width */
-}
