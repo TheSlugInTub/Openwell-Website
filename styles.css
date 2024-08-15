@@ -114,3 +114,47 @@ main {
     padding: 20px;
     background-color: #f9f9f9;
 }
+
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-top: 30px;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+.yap {
+    font-size: 20px;
+}
+
+.divider {
+    width: 50%;
+    margin: 0 auto; /* Centers the div horizontally */
+    text-align: center;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    font-size: 20px;
+}
